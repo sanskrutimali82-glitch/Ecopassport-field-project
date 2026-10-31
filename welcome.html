@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#218653">
+<meta name="description" content="Welcome to EcoPassport">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="welcome">
+<div id="root"></div>
+<script src="js/app.js"></script>
+<script>
+document.getElementById('root').innerHTML=shell('Welcome','Welcome to EcoPassport','Your personal space to understand your footprint and celebrate greener choices.',`
+<div class="welcome" style="min-height:230px"><div><div class="eyebrow" style="color:#d8f4df">A SMALL STEP FOR YOU. A BIG STEP FOR THE PLANET.</div><h2 style="font-size:30px">Track today. Protect tomorrow. 🌍</h2><p>Record everyday habits, discover ways to reduce your impact and keep your eco-friendly contributions in one digital passport.</p><div class="actions no-print" style="margin-top:18px"><a class="btn" href="index.html">Explore dashboard →</a><a class="btn" style="background:transparent;color:white;border:1px solid #ffffff88" href="diary.html">Add first footprint</a></div></div></div>
+<div class="grid three">
+<div class="card"><div class="stat-icon">🌍</div><h3>Understand your footprint</h3><p class="muted">Record transport, electricity, plastic and AC usage in your daily diary.</p></div>
+<div class="card"><div class="stat-icon">🌳</div><h3>Celebrate positive actions</h3><p class="muted">Keep a digital record of tree plantation, recycling, volunteering and more.</p></div>
+<div class="card"><div class="stat-icon">🏅</div><h3>Grow your Eco Citizen status</h3><p class="muted">Earn points and unlock Bronze, Silver, Gold and Platinum badges.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><div class="card-head"><h2>Get started in three steps</h2><span class="pill">Quick guide</span></div>
+<div class="grid three"><div><span class="pill">01 · Record</span><h3 style="margin-top:12px">Add a daily footprint</h3><p class="muted">Enter your activity details in the Footprint Diary.</p><a class="btn secondary small" href="diary.html">Open diary</a></div><div><span class="pill">02 · Contribute</span><h3 style="margin-top:12px">Log an eco action</h3><p class="muted">Record a positive contribution in your EcoPassport.</p><a class="btn secondary small" href="passport.html">Open passport</a></div><div><span class="pill">03 · Improve</span><h3 style="margin-top:12px">Review your progress</h3><p class="muted">Explore your insights, footprint trends and achievements.</p><a class="btn secondary small" href="progress.html">View progress</a></div></div></div>
+<div class="card" style="margin-top:16px"><h2>Before you begin</h2><p class="muted">This is an educational prototype. Footprint values use sample factors that can be adjusted in Settings. Records are saved in this browser only; export a backup if you need to move them to another device.</p><a href="settings.html" class="btn outline">Set up your profile →</a></div>`);
+</script>
+</body>
+</html>

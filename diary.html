@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#218653">
+<meta name="description" content="EcoPassport pollution footprint diary and eco-friendly activity tracker">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="diary"><div id="root"></div><script src="js/app.js"></script><script>
+document.getElementById('root').innerHTML=shell('Footprint Diary','Pollution Footprint Diary','Record daily activities to estimate your environmental footprint.',`
+<div class="grid two"><div class="card"><h2>Add daily activity</h2><p class="muted">Enter your daily usage. The estimated CO₂e is calculated when you save.</p><form id="diaryForm"><div class="form-grid">
+<div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Transport type</label><select name="transport"><option value="">Select transport</option><option>Car</option><option>Bike / Motorcycle</option><option>Bus</option><option>Train / Metro</option><option>Walk / Cycle</option><option>Other</option></select></div>
+<div class="field"><label>Distance travelled (km)</label><input name="distance" type="number" min="0" step=".1" value="0"></div><div class="field"><label>Electricity used (kWh)</label><input name="electricity" type="number" min="0" step=".1" value="0" required></div>
+<div class="field"><label>Single-use plastic items</label><input name="plastic" type="number" min="0" step="1" value="0"></div><div class="field"><label>AC usage (hours)</label><input name="acHours" type="number" min="0" step=".5" value="0"></div>
+<div class="field full"><label>Notes (optional)</label><textarea name="notes" placeholder="Add any details about your day..."></textarea></div></div><div class="form-actions"><button class="btn" type="submit">Save footprint</button><button class="btn outline" type="reset">Clear form</button></div></form></div>
+<div class="card"><div class="eyebrow">YOUR SUMMARY</div><h2 style="margin-top:6px">Estimated total footprint</h2><div class="stat-value" id="diaryTotal">0.00 kg CO₂e</div><p class="muted">This is a simple educational estimate using editable sample factors. Actual emissions vary by location, energy source and vehicle.</p><div class="tip"><span class="tip-icon">💡</span><div><b>Tip</b><p>Use your electricity meter's kWh reading for a more useful estimate.</p></div></div><a class="btn secondary" href="insights.html">See eco insights →</a></div></div>
+<div class="card" style="margin-top:16px"><div class="card-head"><h2>Saved diary records</h2><span class="pill">Editable records</span></div><div class="table-wrap"><table><thead><tr><th>Date</th><th>Transport</th><th>Distance</th><th>Electricity</th><th>Plastic</th><th>CO₂e</th><th>Actions</th></tr></thead><tbody id="diaryTable"></tbody></table></div></div>`);</script></body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#218653">
+<meta name="description" content="EcoPassport pollution footprint diary and eco-friendly activity tracker">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="dashboard"><div id="root"></div><script src="js/app.js"></script><script>
+document.getElementById('root').innerHTML=shell('Dashboard','Your environmental snapshot','A simple overview of your footprint, contributions and Eco Citizen status.',`
+<div class="welcome"><div><div class="eyebrow" style="color:#d8f4df">YOUR DAILY ECO CHECK-IN</div><h2>Hello, <span id="welcomeName">Eco Citizen</span> 👋</h2><p>Understand your everyday footprint, record good actions and build greener habits one day at a time.</p></div><a class="btn" href="diary.html">＋ Add today's footprint</a></div>
+<div class="grid stats" id="dashStats"></div><div class="grid two"><div class="card"><div class="card-head"><h2>Footprint trend</h2><span class="pill">Last 7 days · kg CO₂e</span></div><div id="dashChart"></div></div><div class="card"><div class="card-head"><h2>Your Eco Citizen level</h2><span class="pill" id="dashLevel">Bronze</span></div><div class="donut"></div><p class="muted" style="text-align:center">Keep recording positive actions to unlock new badges.</p><a class="btn secondary" style="width:100%" href="progress.html">View achievements</a></div></div>
+<div class="card" style="margin-top:16px"><div class="card-head"><h2>Recent footprint entries</h2><a class="btn secondary small" href="diary.html">View diary →</a></div><div class="table-wrap"><table><thead><tr><th>Date</th><th>Transport</th><th>Estimated footprint</th></tr></thead><tbody id="recentDiary"></tbody></table></div></div>`);</script></body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#218653">
+<meta name="description" content="EcoPassport pollution footprint diary and eco-friendly activity tracker">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="progress"><div id="root"></div><script src="js/app.js"></script><script>
+document.getElementById('root').innerHTML=shell('Environmental Progress','Your environmental progress','Track your positive actions and unlock Eco Citizen recognition.',`
+<div class="grid stats" id="progressStats"></div><div id="nextLevel" style="margin-bottom:16px"></div><div class="card"><div class="card-head"><h2>Eco Citizen badge collection</h2><span class="pill">Achievement levels</span></div><div class="grid three" id="levelCards"></div></div><div class="card" style="margin-top:16px"><div class="card-head"><h2>Monthly footprint trend</h2><span class="pill">Last 6 months · kg CO₂e</span></div><div id="progressChart"></div><p class="muted">Your chart updates as you add diary records. Lower footprint over time is a positive sign.</p></div>`);</script></body>
+</html>
